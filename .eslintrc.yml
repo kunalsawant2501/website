@@ -1,0 +1,40 @@
+env:
+  browser: true
+  es2020: true
+
+settings:
+  'import/resolver':
+    node:
+      paths: ['./app/javascript']
+  react:
+    version: 'detect'
+
+extends:
+  - 'eslint:recommended'
+  - 'plugin:react/recommended'
+
+globals:
+  Atomics: 'readonly'
+  SharedArrayBuffer: 'readonly'
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+    modules: true
+  ecmaVersion: 11
+  sourceType: 'module'
+  codeFrame: true
+
+plugins:
+  - react
+
+rules: {
+  'indent': ['error', 2],
+  'no-console': 'warn',
+  'max-len': ['error', { code: 115, ignoreTrailingComments: true, ignoreStrings: true }],
+  'react/display-name': 'warn',
+  'react/jsx-closing-bracket-location': ['error', 'after-props'],
+  'react/jsx-no-bind': ['error', { allowArrowFunctions: true }],
+  'react/no-unescaped-entities': ['error', { forbid: ['>', '}'] }],
+  'react/self-closing-comp': 'warn',
+}
