@@ -6,6 +6,12 @@ require("turbolinks").start()
 require("channels")
 
 // -----------------------------
+// LIBS REQUIRES
+// -----------------------------
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
+
+// -----------------------------
 // REACT APP
 // -----------------------------
 import React from 'react'

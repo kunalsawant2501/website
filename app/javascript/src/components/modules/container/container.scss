@@ -1,0 +1,11 @@
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &--content {
+    display: inline-block;
+    max-width: 1280px;
+    width: inherit;
+  }
+}

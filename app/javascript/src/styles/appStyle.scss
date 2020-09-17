@@ -5,15 +5,7 @@ html, body {
   width: 100%;
 
   #app {
-    display: inline-block;
     font-family: 'Roboto', sans-serif;
-    width: inherit;
-  }
-
-  .app-wrapper {
-    color: $white;
-    display: inherit;
-    background-color: $navy-blue;
     width: inherit;
   }
 }

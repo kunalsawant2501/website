@@ -1,0 +1,15 @@
+@import 'styles/variables';
+
+#home {
+  background: $navy-blue;
+  color: $white;
+  height: 600px;
+
+  .phrases-list {
+    list-style: none;
+
+    &--item {
+      font-size: 2rem;
+    }
+  }
+}
